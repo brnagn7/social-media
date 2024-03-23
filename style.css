@@ -87,7 +87,8 @@ button {
 /* STYLES */
 
 .header {
-  background-image: linear-gradient(to right, #18a0be, #622db9);
+  background: linear-gradient(90deg, #fc466b 0%, #3f5efb 100%);
+  /* background-image: linear-gradient(to right, #18a0be, #622db9); */
   height: 55px;
   display: flex;
 }
