@@ -1,4 +1,4 @@
-# My Project
+# Social Media Template Design Example
 
 ## Description
 A brief description of what this project is about.
