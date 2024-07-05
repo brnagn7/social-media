@@ -7,7 +7,7 @@ A brief description of your project.
 - [Features](#features)
 - [Installation](#installation)
 - [Usage](#usage)
-- [Screenshots](https://github.com/brnagn7/social-media/social-editor-finished.png](https://github.com/brnagn7/social-media/blob/master/social-editor-finished.png)
+![Screenshots](https://github.com/brnagn7/social-media/social-editor-finished.png](https://github.com/brnagn7/social-media/blob/master/social-editor-finished.png)
 - [Contributing](#contributing)
 - [License](#license)
 
