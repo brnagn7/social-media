@@ -1,3 +1,12 @@
+/*
+Author:     Edward Mooney
+Email:      brnagn7@gmail.com
+Document:   style.css
+Description:A Social Media Template file
+-------------------------------------------
+Layout: App => top(.header) .app_container((left => .sidebar + .panel, .artboard))
+-------------------------------------------
+*/
 /* RESET */
 * {
   margin: 0;
@@ -84,10 +93,8 @@ button {
   display: flex;
 }
 
-/* STYLES */
-
 .header {
-  background: linear-gradient(90deg, #fc466b 0%, #3f5efb 100%);
+  background: linear-gradient(90deg, #0fa606 0%, #639666 100%);
   /* background-image: linear-gradient(to right, #18a0be, #622db9); */
   height: 55px;
   display: flex;
@@ -142,9 +149,10 @@ button {
 }
 
 .dd-toggle__text {
+  text-transform: uppercase;
 }
 
-/* ------------------ */
+/* -------- SIDE BAR --------------- */
 
 .sidebar {
   display: flex;
@@ -152,8 +160,6 @@ button {
   background-color: #10171a;
   width: 75px;
 }
-
-/* -------- LEFT MENU --------------- */
 
 .menu {
 }
@@ -164,7 +170,7 @@ button {
   flex-direction: column;
   align-items: center;
   padding: 19px 0;
-  color: rgba(255, 255, 255, 0.4);
+  color: #0cb061;
   width: 100%;
   transition: all 0.4s;
   animation: fade-in-from-left 0.5s;
@@ -208,6 +214,8 @@ button {
   font-size: 12px;
 }
 
+/* --------  menu footer --------------- */
+
 .footer {
   margin-top: auto;
   margin-bottom: 60px;
@@ -220,10 +228,12 @@ button {
   white-space: nowrap;
 }
 
-/* ------------------ */
+/* -------  END - SIDE BAR --------------- */
+
+/* ----------- PANEL -----------*/
 
 .panel {
-  background-color: #2b363c;
+  background-color: #2b363b;
   width: 350px;
   padding: 15px 31px;
 }
@@ -306,6 +316,8 @@ button {
   font-weight: 400;
 }
 
+/* -------- END - PANEL --------------- */
+
 /* ------- MAIN ----------- */
 
 .main {
@@ -345,7 +357,7 @@ button {
 }
 
 .button {
-  background-color: #375bb6;
+  background-color: #0cb061;
   border-radius: 500px;
   font-size: 11px;
   text-transform: uppercase;
@@ -362,6 +374,7 @@ button {
 
 /* Artboard */
 .artboard {
+  /* -50px for info bar and -55px for header*/
   height: calc(100vh - 50px - 55px);
   display: flex;
   justify-content: center;
@@ -450,6 +463,10 @@ button {
   transition: all 0.4s;
 }
 
+.tool__icon {
+
+}
+
 .tool:last-child {
   margin-top: auto;
 }
@@ -460,13 +477,13 @@ button {
   color: #fff;
 }
 
-.tool__icon {
-}
 
 .tool-active {
   background-color: #2b363b;
   color: #fff;
 }
+
+/* -------- END - MAIN --------------- */
 
 /* media queries */
 @media (max-width: 1200px) {
@@ -508,41 +525,6 @@ button {
   .dd-toggle:nth-of-type(2),
   .dd-toggle:nth-of-type(3) {
     display: none;
-  }
-  .artboard {
-    flex-direction: column;
-  }
-  .canvas {
-    order: 2;
-    height: 450px;
-  }
-  .canvas__circle:nth-of-type(1) {
-    top: 11.5%;
-    left: 9.8%;
-  }
-  .canvas__circle:nth-of-type(2) {
-    top: 11.5%;
-    right: 9.8%;
-  }
-  .canvas__circle:nth-of-type(3) {
-    bottom: 11.5%;
-    right: 9.8%;
-  }
-  .canvas__circle:nth-of-type(4) {
-    bottom: 11.5%;
-    left: 9.8%;
-  }
-
-  .tools {
-    flex-direction: row;
-    column-gap: 5px;
-    order: 1;
-    height: initial;
-    margin-bottom: 15px;
-    align-self: start;
-  }
-  .tool:last-child {
-    margin: 0;
   }
 }
 
